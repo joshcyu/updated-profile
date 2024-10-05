@@ -57,7 +57,7 @@ function App() {
  }
 
  useEffect(() => {
-  if(!localStorage) {
+  if(localStorage === null) {
     setcontentItems({description: 
       "A minimal crochet gallery with content management to upload recent crocheted works."},
       {photoUrl: 
@@ -68,8 +68,6 @@ function App() {
       "On going"},
       {title: 
       "Crochet Gallery"})
-
-      console.log(contentItems)
     return
   }
   
