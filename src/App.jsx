@@ -58,7 +58,7 @@ function App() {
 
  useEffect(() => {
   if(!localStorage) {
-    setcontentItems([{description: 
+    setcontentItems({description: 
       "A minimal crochet gallery with content management to upload recent crocheted works."},
       {photoUrl: 
       "https://res.cloudinary.com/da93vlump/image/upload/v1728122823/jffi2jw8ixrpks2czmaz.jpg"},
@@ -67,7 +67,7 @@ function App() {
       {status: 
       "On going"},
       {title: 
-      "Crochet Gallery"}])
+      "Crochet Gallery"})
     return
   }
   
