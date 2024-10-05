@@ -68,10 +68,12 @@ function App() {
       "On going"},
       {title: 
       "Crochet Gallery"})
+
+      console.log(contentItems)
     return
   }
   
-  console.log(contentItems)
+ 
   setcontentItems(JSON.parse(localStorage.getItem('item')))
   console.log(JSON.parse(localStorage.getItem('item')))
   console.log('welcome')
