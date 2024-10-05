@@ -63,7 +63,7 @@ function App() {
 
   setcontentItems(JSON.parse(localStorage.getItem('items')))
   console.log(JSON.parse(localStorage.getItem('items')))
-  
+  console.log('welcome')
  }, [])
 
 
