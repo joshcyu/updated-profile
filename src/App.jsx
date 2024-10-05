@@ -71,6 +71,7 @@ function App() {
     return
   }
   
+  console.log(contentItems)
   setcontentItems(JSON.parse(localStorage.getItem('item')))
   console.log(JSON.parse(localStorage.getItem('item')))
   console.log('welcome')
