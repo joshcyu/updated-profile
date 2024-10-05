@@ -91,7 +91,7 @@ const ManageContent = (props) => {
   }
 
 useEffect(() => {
-  setcontent(JSON.parse(localStorage.getItem('item')))
+  setcontent(JSON.parse(localStorage.getItem('items')))
   console.log(content)
 },[])
   

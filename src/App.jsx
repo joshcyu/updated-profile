@@ -61,7 +61,7 @@ function App() {
     return
   }
 
-  setcontentItems(JSON.parse(localStorage.getItem('item')))
+  setcontentItems(JSON.parse(localStorage.getItem('items')))
   console.log()
   
  }, [])
