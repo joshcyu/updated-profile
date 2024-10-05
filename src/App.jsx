@@ -14,14 +14,14 @@ function App() {
   let [themeSelect, setthemeSelect] = useState('dark')
   let [content, setContent] = useState(false)
   let [contentItems, setcontentItems] = useState([{description: 
-    "A minimal crochet gallery with content management to upload recent crocheted works."},
-    {photoUrl: 
-    "https://res.cloudinary.com/da93vlump/image/upload/v1728122823/jffi2jw8ixrpks2czmaz.jpg"},
-    {stacks: 
-    "Vanilla JS, HTML, CSS, JSON"},
-    {status: 
-    "On going"},
-    {title: 
+    "A minimal crochet gallery with content management to upload recent crocheted works.",
+    photoUrl: 
+    "https://res.cloudinary.com/da93vlump/image/upload/v1728122823/jffi2jw8ixrpks2czmaz.jpg",
+    stacks: 
+    "Vanilla JS, HTML, CSS, JSON",
+    status: 
+    "On going",
+    title: 
     "Crochet Gallery"}])
   let [pageState, setPageState] = useState(true)
   let [defaultPage, setDefaultPage] = useState(true)
@@ -70,7 +70,7 @@ function App() {
     return
   }
   
- 
+ console.log(contentItems)
   
   console.log(JSON.parse(localStorage.getItem('item')))
   console.log('welcome')
