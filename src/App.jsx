@@ -22,7 +22,18 @@ function App() {
     status: 
     "On going",
     title: 
-    "Crochet Gallery"}])
+    "Crochet Gallery"}, {
+    description: 
+    "A simple movie gallery using OMDb API. Developed using React JS. The website allows the user to search for specific movies that they desire, and see some info from the API like the movie title, released year, and the status of the movie.",
+    photoUrl: 
+    "https://res.cloudinary.com/da93vlump/image/upload/v1728123435/q0hhdpndou17w0ky5wzo.jpg",
+    stacks: 
+    "ReactJS, OMDb API",
+    status: 
+    "Finished",
+    title: 
+    "Movie Gallery OMDb API"
+        }])
   let [pageState, setPageState] = useState(true)
   let [defaultPage, setDefaultPage] = useState(true)
   let [password, setPassword] = useState('')
