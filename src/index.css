@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: poppins, sans-serif ;
+}
+
+.aqua {
+  --grape: 203, 255,255;
+  --grape2: 174, 220, 220;
+
+  --line: 136,169,169;
+  --card: 255,255,255;
+
+  --copyprimary: 0,0,0;
+  --copysecondary: 61, 110, 196;
+  --copythirtiary: 76, 122, 202;
+
+  background: 'rgba(var(--background))',
+}
+
+.dark {
+  --grape: 26, 23, 23;
+  --grape2: 75, 75, 75;
+
+  --line: 255,255,255;
+  --card: 255,255,255;
+
+  --copyprimary: 255,255,255;
+  --copysecondary: 255, 202, 126;
+  --copythirtiary: 255, 192, 44;
+
+  background: 'rgba(var(--background))',
+}
+
+.light {
+  --grape: 255, 255, 255;
+  --grape2: 225, 225, 225;
+
+  --line: 63,63,63;
+  --card: 255,255,255;
+
+  --copyprimary: 0,0,0;
+  --copysecondary: 33, 91, 259;
+  --copythirtiary: 0, 58, 219;
+
+  background: 'rgba(var(--background))',
+}
+
+.beige {
+  --grape: 255, 252, 212;
+  --grape2: 208, 188, 107;
+
+  --line: 240,144,33;
+  --card: 255,255,255;
+
+  --copyprimary: 0,0,0;
+  --copysecondary:  240,144,33;
+  --copythirtiary: 178, 106, 25;
+
+  background: 'rgba(var(--background))',
+}
+
+.checkBox:checked ~.checkBoxLabel .checkBoxIcon1{
+  transform: rotate(45deg);
+  transition-duration: 200ms;
+}
+.checkBox:checked ~.checkBoxLabel .checkBoxIcon2{
+  transform: rotate(-45deg);
+  transition-duration: 200ms;
+}
+
+.transLate {
+  transform: translate(-50%,-50%);
+}
+
+.itemGradient::after {
+  background-image: linear-gradient(to top, #000 40%, transparent);
+}
+
+@keyframes anime {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.animeShow {
+  animation: anime 1s ;
+}
