@@ -62,7 +62,7 @@ function App() {
   }
 
   setcontentItems(JSON.parse(localStorage.getItem('items')))
-  console.log()
+  console.log(JSON.parse(localStorage.getItem('items')))
   
  }, [])
 
