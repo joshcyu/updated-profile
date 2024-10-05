@@ -33,7 +33,7 @@ const ManageContent = (props) => {
   }
 
   function persistData(item) {
-    localStorage.setItem('items', JSON.stringify(item))
+    localStorage.setItem('item', JSON.stringify(item))
   }
 
 
@@ -91,7 +91,7 @@ const ManageContent = (props) => {
   }
 
 useEffect(() => {
-  setcontent(JSON.parse(localStorage.getItem('items')))
+  setcontent(JSON.parse(localStorage.getItem('item')))
   console.log(content)
 },[])
   

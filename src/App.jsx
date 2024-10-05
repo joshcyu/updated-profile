@@ -58,11 +58,21 @@ function App() {
 
  useEffect(() => {
   if(!localStorage) {
+    setcontentItems([{description: 
+      "A minimal crochet gallery with content management to upload recent crocheted works."},
+      {photoUrl: 
+      "https://res.cloudinary.com/da93vlump/image/upload/v1728122823/jffi2jw8ixrpks2czmaz.jpg"},
+      {stacks: 
+      "Vanilla JS, HTML, CSS, JSON"},
+      {status: 
+      "On going"},
+      {title: 
+      "Crochet Gallery"}])
     return
   }
-
-  setcontentItems(JSON.parse(localStorage.getItem('items')))
-  console.log(JSON.parse(localStorage.getItem('items')))
+  
+  setcontentItems(JSON.parse(localStorage.getItem('item')))
+  console.log(JSON.parse(localStorage.getItem('item')))
   console.log('welcome')
  }, [])
 
