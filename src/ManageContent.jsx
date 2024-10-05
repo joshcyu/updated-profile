@@ -33,7 +33,7 @@ const ManageContent = (props) => {
   }
 
   function persistData(item) {
-    localStorage.setItem('item', JSON.stringify(item))
+    localStorage.setItem('items', JSON.stringify(item))
   }
 
 
