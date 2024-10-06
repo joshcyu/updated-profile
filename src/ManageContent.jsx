@@ -48,8 +48,8 @@ const ManageContent = (props) => {
 
   function handleAddContent(newContent) {
     let myContent = content.push(newContent)
-    console.log(myContent)
-    persistData(myContent)
+    console.log(content)
+    persistData(content)
   }
 
   function persistData(item) {
