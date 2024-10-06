@@ -47,7 +47,7 @@ const ManageContent = (props) => {
   }
 
   function handleAddContent(newContent) {
-    let myContent = [...content, newContent]
+    let myContent = {...content, newContent}
     setcontent(myContent)
     persistData(myContent)
   }
