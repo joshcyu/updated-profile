@@ -67,7 +67,7 @@ function App() {
  console.log(contentItems)
   
   console.log(JSON.parse(localStorage.getItem('item')))
-  console.log('welcome tesitng 2')
+  console.log('welcome tesitng 3')
  }, [])
 
 

@@ -4,7 +4,7 @@ import { jsx } from 'react/jsx-runtime'
 
 const ManageContent = (props) => {
   const {handleContent} = props
-  const content =[{description: 
+  let content =[{description: 
     "A minimal crochet gallery with content management to upload recent crocheted works.",
     photoUrl: 
     "https://res.cloudinary.com/da93vlump/image/upload/v1728122823/jffi2jw8ixrpks2czmaz.jpg",
@@ -111,7 +111,7 @@ const ManageContent = (props) => {
   }
 
 useEffect(() => {
-  setcontent(JSON.parse(localStorage.getItem('item')))
+  content = JSON.parse(localStorage.getItem('item'))
   console.log(content)
 },[])
   
