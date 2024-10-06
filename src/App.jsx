@@ -13,7 +13,83 @@ function App() {
   let [theme, setTheme] = useState(false)
   let [themeSelect, setthemeSelect] = useState('dark')
   let [content, setContent] = useState(false)
-  let [contentItems, setcontentItems] = useState([])
+  let [contentItems, setcontentItems] = useState([
+    {description
+      : 
+      "A minimal crochet gallery with content management to upload recent crocheted works.",
+      photoUrl
+      : 
+      "https://res.cloudinary.com/da93vlump/image/upload/v1728122823/jffi2jw8ixrpks2czmaz.jpg",
+      stacks
+      : 
+      "Vanilla JS, HTML, CSS, JSON",
+      status
+      : 
+      "On going",
+      title
+      : 
+      "Crochet Gallery"}, 
+      {description
+        : 
+        "A simple movie gallery using OMDb API. Developed using React JS. The website allows the user to search for specific movies that they desire, and see some info from the API like the movie title, released year, and the status of the movie.",
+        photoUrl
+        : 
+        "https://res.cloudinary.com/da93vlump/image/upload/v1728123435/q0hhdpndou17w0ky5wzo.jpg",
+        stacks
+        : 
+        "ReactJS, OMDb API",
+        status
+        : 
+        "Finished",
+        title
+        : 
+        "Movie Gallery OMDb API"},
+        {description
+          : 
+          "A thesis project aimed to help the citizens of Binangonan Rizal that resides across the nearby and isolated islands. The project adapts the concept of Beep Card, aside from cashless transactions, the passenger's info are also stored in the card. When the card is scanned on the scanner, the passenger's information will be logged and recorded on the website. Both hardware and software are developed to reduce the passenger line during manual(writing on log book) logging, and also to monitor the number of passengers on the boat to prevent overloading. It will also record the arrival time of the passengers at the destination for safety purposes.",
+          photoUrl
+          : 
+          "https://res.cloudinary.com/da93vlump/image/upload/v1728182542/hi1wybuslrmvlsj0auqp.jpg",
+          stacks
+          : 
+          "PHP, MySQL, Bootstrap, Vanilla JS, HTML CSS",
+          status
+          : 
+          "Completed",
+          title
+          : 
+          "Boat Station Thesis"}, 
+          {description
+            : 
+            "A simple Gym App, built in ReactJS, TailwindCSS, and data from SmolJames. Where a user can target specific body parts, and target their goal such as cardiovascular endurance, growth hypertrophy, or strength training. The app will provide an efficient set of workouts depending on the input parameters. The user can also increment or update the set counts whenever they finish a set.",
+            photoUrl
+            : 
+            "https://res.cloudinary.com/da93vlump/image/upload/v1728184055/qqsw4kkhzlgp6m3kli4u.jpg",
+            stacks
+            : 
+            "ReactJS, TailwindCSS",
+            status
+            : 
+            "Completed",
+            title
+            : 
+            "React Gym App"}, 
+            {description
+              : 
+              " The first website I created ever since I graduated. A simple static web profile that displays information about my self. It has a toggle between light and dark mode.",
+              photoUrl
+              : 
+              "https://res.cloudinary.com/da93vlump/image/upload/v1728184122/nqqtp7bdmkdhfjw2hj0e.jpg",
+              stacks
+              : 
+              "HTML, CSS, JS",
+              status
+              : 
+              "Completed",
+              title
+              : 
+              "Personal Web Profile"}
+  ])
   let [pageState, setPageState] = useState(true)
   let [defaultPage, setDefaultPage] = useState(true)
   let [password, setPassword] = useState('')
@@ -60,11 +136,8 @@ function App() {
   if(localStorage === null) {
     return
   }
+  
 
-
-  setcontentItems(JSON.parse(localStorage.getItem('item')))
-
-  console.log(localStorage.getItem('item')))
  }, [])
 
 
