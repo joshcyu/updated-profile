@@ -14,8 +14,6 @@ const ManageContent = (props) => {
   const [stacks, setStacks] = useState('')
   let  [queuedImages, setqueuedImages] = useState([])
 
- 
-
   const handleImageChange = (event) => {
     const newImage = event.target.files[0]
 
@@ -31,12 +29,12 @@ const ManageContent = (props) => {
     content.push(newContent)
     console.log(content)
     persistData(content)
+    location.reload()
   }
 
   function persistData(item) {
     localStorage.setItem('item', JSON.stringify(item))
   }
-
 
   const handleUpload = async () => {
     if (!image) return
@@ -92,8 +90,6 @@ useEffect(() => {
   console.log(content)
 },[])
   
-
-
   return (
     <div className='fixed flex justify-center items-center w-[100%] h-[100%] top-0 left-0 right-0 bottom-0 bg-gray-500/25 z-[10] text-copythirtiary'>
       <div className='flex flex-col w-[90%] sm:w-[30%] p-5 bg-grape gap-4 rounded-md'>
@@ -147,9 +143,7 @@ useEffect(() => {
             <button className='p-2 hover:bg-grape/70 hover:text-copysecondary' onClick={() => {
               handleContent()
             } }>Cancel</button>
-            </div>
-
-           
+          </div>
       </div>
     </div>
   )

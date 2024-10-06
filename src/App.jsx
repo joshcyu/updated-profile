@@ -61,9 +61,10 @@ function App() {
     return
   }
 
+
   setcontentItems(JSON.parse(localStorage.getItem('item')))
 
-  console.log('Test Success')
+  console.log(localStorage.getItem('item')))
  }, [])
 
 
