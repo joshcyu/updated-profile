@@ -4,7 +4,7 @@ import { jsx } from 'react/jsx-runtime'
 
 const ManageContent = (props) => {
   const {handleContent} = props
-  const [content, setcontent] = useState([{description: 
+  const content =[{description: 
     "A minimal crochet gallery with content management to upload recent crocheted works.",
     photoUrl: 
     "https://res.cloudinary.com/da93vlump/image/upload/v1728122823/jffi2jw8ixrpks2czmaz.jpg",
@@ -24,7 +24,7 @@ const ManageContent = (props) => {
     "Finished",
     title: 
     "Movie Gallery OMDb API"
-        }])
+        }]
   const [image, setImage] = useState([])
   const [loading, setLoading] = useState(false)
   const [url, setUrl] = useState('')
@@ -47,7 +47,7 @@ const ManageContent = (props) => {
   }
 
   function handleAddContent(newContent) {
-    let myContent = {...content, newContent}
+    let myContent = content.push(newContent)
     setcontent(myContent)
     persistData(myContent)
   }
