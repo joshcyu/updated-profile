@@ -62,12 +62,8 @@ function App() {
   }
 
   setcontentItems(JSON.parse(localStorage.getItem('item')))
-  console.log(contentItems)
-  
- console.log(contentItems)
-  
-  console.log(JSON.parse(localStorage.getItem('item')))
-  console.log('welcome tesitng 4')
+
+  console.log('Test Success')
  }, [])
 
 

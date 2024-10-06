@@ -74,7 +74,6 @@ const ManageContent = (props) => {
 
       const photoUrl = response.data.secure_url // Get the image URL from the response
 
-
       // Now you can send all the data to your backend or store it locally
       const itemData = {
         title,
@@ -88,10 +87,7 @@ const ManageContent = (props) => {
 
       handleAddContent(itemData)
 
-  
       // Optionally reset the fields after submission
-
-
       
       resetForm()
     } catch (error) {
