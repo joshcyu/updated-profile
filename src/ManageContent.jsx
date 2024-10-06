@@ -4,27 +4,7 @@ import { jsx } from 'react/jsx-runtime'
 
 const ManageContent = (props) => {
   const {handleContent} = props
-  let content =[{description: 
-    "A minimal crochet gallery with content management to upload recent crocheted works.",
-    photoUrl: 
-    "https://res.cloudinary.com/da93vlump/image/upload/v1728122823/jffi2jw8ixrpks2czmaz.jpg",
-    stacks: 
-    "Vanilla JS, HTML, CSS, JSON",
-    status: 
-    "On going",
-    title: 
-    "Crochet Gallery"}, {
-    description: 
-    "A simple movie gallery using OMDb API. Developed using React JS. The website allows the user to search for specific movies that they desire, and see some info from the API like the movie title, released year, and the status of the movie.",
-    photoUrl: 
-    "https://res.cloudinary.com/da93vlump/image/upload/v1728123435/q0hhdpndou17w0ky5wzo.jpg",
-    stacks: 
-    "ReactJS, OMDb API",
-    status: 
-    "Finished",
-    title: 
-    "Movie Gallery OMDb API"
-        }]
+  let content =[]
   const [image, setImage] = useState([])
   const [loading, setLoading] = useState(false)
   const [url, setUrl] = useState('')
@@ -47,7 +27,8 @@ const ManageContent = (props) => {
   }
 
   function handleAddContent(newContent) {
-    let myContent = content.push(newContent)
+    content = JSON.parse(localStorage.getItem('item'))
+    content.push(newContent)
     console.log(content)
     persistData(content)
   }
